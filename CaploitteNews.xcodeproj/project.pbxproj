@@ -101,8 +101,11 @@
 		A4A0D9372B0C74A3002A0F7B /* CaploitteNews */ = {
 			isa = PBXGroup;
 			children = (
-				A4A0D9382B0C74A3002A0F7B /* AppDelegate.swift */,
-				A4A0D93A2B0C74A3002A0F7B /* SceneDelegate.swift */,
+				A4A0D96B2B0C7509002A0F7B /* API Service */,
+				A4A0D96C2B0C7524002A0F7B /* ViewModels */,
+				A4A0D96D2B0C7532002A0F7B /* Models */,
+				A4A0D96E2B0C753F002A0F7B /* Common */,
+				A4A0D96F2B0C7564002A0F7B /* Controllers */,
 				A4A0D93C2B0C74A3002A0F7B /* ViewController.swift */,
 				A4A0D93E2B0C74A3002A0F7B /* Main.storyboard */,
 				A4A0D9442B0C74A7002A0F7B /* Assets.xcassets */,
@@ -128,6 +131,43 @@
 				A4A0D95E2B0C74A7002A0F7B /* CaploitteNewsUITestsLaunchTests.swift */,
 			);
 			path = CaploitteNewsUITests;
+			sourceTree = "<group>";
+		};
+		A4A0D96B2B0C7509002A0F7B /* API Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "API Service";
+			sourceTree = "<group>";
+		};
+		A4A0D96C2B0C7524002A0F7B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A4A0D96D2B0C7532002A0F7B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A4A0D96E2B0C753F002A0F7B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				A4A0D9382B0C74A3002A0F7B /* AppDelegate.swift */,
+				A4A0D93A2B0C74A3002A0F7B /* SceneDelegate.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		A4A0D96F2B0C7564002A0F7B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -444,11 +484,13 @@
 				DEVELOPMENT_TEAM = RE53Y2ZN4H;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CaploitteNews/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Caploitte News";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.news";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -472,11 +514,13 @@
 				DEVELOPMENT_TEAM = RE53Y2ZN4H;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CaploitteNews/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Caploitte News";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.news";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIStatusBarStyle = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
