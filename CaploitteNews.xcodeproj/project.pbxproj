@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A4A0D9392B0C74A3002A0F7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A0D9382B0C74A3002A0F7B /* AppDelegate.swift */; };
+		A4A0D93B2B0C74A3002A0F7B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A0D93A2B0C74A3002A0F7B /* SceneDelegate.swift */; };
+		A4A0D93D2B0C74A3002A0F7B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A0D93C2B0C74A3002A0F7B /* ViewController.swift */; };
+		A4A0D9402B0C74A3002A0F7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4A0D93E2B0C74A3002A0F7B /* Main.storyboard */; };
+		A4A0D9432B0C74A3002A0F7B /* CaploitteNews.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A4A0D9412B0C74A3002A0F7B /* CaploitteNews.xcdatamodeld */; };
+		A4A0D9452B0C74A7002A0F7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4A0D9442B0C74A7002A0F7B /* Assets.xcassets */; };
+		A4A0D9482B0C74A7002A0F7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4A0D9462B0C74A7002A0F7B /* LaunchScreen.storyboard */; };
+		A4A0D9532B0C74A7002A0F7B /* CaploitteNewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A0D9522B0C74A7002A0F7B /* CaploitteNewsTests.swift */; };
+		A4A0D95D2B0C74A7002A0F7B /* CaploitteNewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A0D95C2B0C74A7002A0F7B /* CaploitteNewsUITests.swift */; };
+		A4A0D95F2B0C74A7002A0F7B /* CaploitteNewsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A0D95E2B0C74A7002A0F7B /* CaploitteNewsUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A4A0D94F2B0C74A7002A0F7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4A0D92D2B0C74A3002A0F7B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4A0D9342B0C74A3002A0F7B;
+			remoteInfo = CaploitteNews;
+		};
+		A4A0D9592B0C74A7002A0F7B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4A0D92D2B0C74A3002A0F7B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4A0D9342B0C74A3002A0F7B;
+			remoteInfo = CaploitteNews;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A4A0D9352B0C74A3002A0F7B /* CaploitteNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaploitteNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4A0D9382B0C74A3002A0F7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A4A0D93A2B0C74A3002A0F7B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A4A0D93C2B0C74A3002A0F7B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A4A0D93F2B0C74A3002A0F7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A4A0D9422B0C74A3002A0F7B /* CaploitteNews.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CaploitteNews.xcdatamodel; sourceTree = "<group>"; };
+		A4A0D9442B0C74A7002A0F7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A4A0D9472B0C74A7002A0F7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A4A0D9492B0C74A7002A0F7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4A0D94E2B0C74A7002A0F7B /* CaploitteNewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaploitteNewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4A0D9522B0C74A7002A0F7B /* CaploitteNewsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaploitteNewsTests.swift; sourceTree = "<group>"; };
+		A4A0D9582B0C74A7002A0F7B /* CaploitteNewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaploitteNewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4A0D95C2B0C74A7002A0F7B /* CaploitteNewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaploitteNewsUITests.swift; sourceTree = "<group>"; };
+		A4A0D95E2B0C74A7002A0F7B /* CaploitteNewsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaploitteNewsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A4A0D9322B0C74A3002A0F7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4A0D94B2B0C74A7002A0F7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4A0D9552B0C74A7002A0F7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A4A0D92C2B0C74A3002A0F7B = {
+			isa = PBXGroup;
+			children = (
+				A4A0D9372B0C74A3002A0F7B /* CaploitteNews */,
+				A4A0D9512B0C74A7002A0F7B /* CaploitteNewsTests */,
+				A4A0D95B2B0C74A7002A0F7B /* CaploitteNewsUITests */,
+				A4A0D9362B0C74A3002A0F7B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A4A0D9362B0C74A3002A0F7B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4A0D9352B0C74A3002A0F7B /* CaploitteNews.app */,
+				A4A0D94E2B0C74A7002A0F7B /* CaploitteNewsTests.xctest */,
+				A4A0D9582B0C74A7002A0F7B /* CaploitteNewsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4A0D9372B0C74A3002A0F7B /* CaploitteNews */ = {
+			isa = PBXGroup;
+			children = (
+				A4A0D9382B0C74A3002A0F7B /* AppDelegate.swift */,
+				A4A0D93A2B0C74A3002A0F7B /* SceneDelegate.swift */,
+				A4A0D93C2B0C74A3002A0F7B /* ViewController.swift */,
+				A4A0D93E2B0C74A3002A0F7B /* Main.storyboard */,
+				A4A0D9442B0C74A7002A0F7B /* Assets.xcassets */,
+				A4A0D9462B0C74A7002A0F7B /* LaunchScreen.storyboard */,
+				A4A0D9492B0C74A7002A0F7B /* Info.plist */,
+				A4A0D9412B0C74A3002A0F7B /* CaploitteNews.xcdatamodeld */,
+			);
+			path = CaploitteNews;
+			sourceTree = "<group>";
+		};
+		A4A0D9512B0C74A7002A0F7B /* CaploitteNewsTests */ = {
+			isa = PBXGroup;
+			children = (
+				A4A0D9522B0C74A7002A0F7B /* CaploitteNewsTests.swift */,
+			);
+			path = CaploitteNewsTests;
+			sourceTree = "<group>";
+		};
+		A4A0D95B2B0C74A7002A0F7B /* CaploitteNewsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A4A0D95C2B0C74A7002A0F7B /* CaploitteNewsUITests.swift */,
+				A4A0D95E2B0C74A7002A0F7B /* CaploitteNewsUITestsLaunchTests.swift */,
+			);
+			path = CaploitteNewsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A4A0D9342B0C74A3002A0F7B /* CaploitteNews */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4A0D9622B0C74A7002A0F7B /* Build configuration list for PBXNativeTarget "CaploitteNews" */;
+			buildPhases = (
+				A4A0D9312B0C74A3002A0F7B /* Sources */,
+				A4A0D9322B0C74A3002A0F7B /* Frameworks */,
+				A4A0D9332B0C74A3002A0F7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CaploitteNews;
+			productName = CaploitteNews;
+			productReference = A4A0D9352B0C74A3002A0F7B /* CaploitteNews.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A4A0D94D2B0C74A7002A0F7B /* CaploitteNewsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4A0D9652B0C74A7002A0F7B /* Build configuration list for PBXNativeTarget "CaploitteNewsTests" */;
+			buildPhases = (
+				A4A0D94A2B0C74A7002A0F7B /* Sources */,
+				A4A0D94B2B0C74A7002A0F7B /* Frameworks */,
+				A4A0D94C2B0C74A7002A0F7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4A0D9502B0C74A7002A0F7B /* PBXTargetDependency */,
+			);
+			name = CaploitteNewsTests;
+			productName = CaploitteNewsTests;
+			productReference = A4A0D94E2B0C74A7002A0F7B /* CaploitteNewsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A4A0D9572B0C74A7002A0F7B /* CaploitteNewsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4A0D9682B0C74A7002A0F7B /* Build configuration list for PBXNativeTarget "CaploitteNewsUITests" */;
+			buildPhases = (
+				A4A0D9542B0C74A7002A0F7B /* Sources */,
+				A4A0D9552B0C74A7002A0F7B /* Frameworks */,
+				A4A0D9562B0C74A7002A0F7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4A0D95A2B0C74A7002A0F7B /* PBXTargetDependency */,
+			);
+			name = CaploitteNewsUITests;
+			productName = CaploitteNewsUITests;
+			productReference = A4A0D9582B0C74A7002A0F7B /* CaploitteNewsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A4A0D92D2B0C74A3002A0F7B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					A4A0D9342B0C74A3002A0F7B = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					A4A0D94D2B0C74A7002A0F7B = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = A4A0D9342B0C74A3002A0F7B;
+					};
+					A4A0D9572B0C74A7002A0F7B = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = A4A0D9342B0C74A3002A0F7B;
+					};
+				};
+			};
+			buildConfigurationList = A4A0D9302B0C74A3002A0F7B /* Build configuration list for PBXProject "CaploitteNews" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A4A0D92C2B0C74A3002A0F7B;
+			productRefGroup = A4A0D9362B0C74A3002A0F7B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A4A0D9342B0C74A3002A0F7B /* CaploitteNews */,
+				A4A0D94D2B0C74A7002A0F7B /* CaploitteNewsTests */,
+				A4A0D9572B0C74A7002A0F7B /* CaploitteNewsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A4A0D9332B0C74A3002A0F7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4A0D9482B0C74A7002A0F7B /* LaunchScreen.storyboard in Resources */,
+				A4A0D9452B0C74A7002A0F7B /* Assets.xcassets in Resources */,
+				A4A0D9402B0C74A3002A0F7B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4A0D94C2B0C74A7002A0F7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4A0D9562B0C74A7002A0F7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A4A0D9312B0C74A3002A0F7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4A0D9432B0C74A3002A0F7B /* CaploitteNews.xcdatamodeld in Sources */,
+				A4A0D93D2B0C74A3002A0F7B /* ViewController.swift in Sources */,
+				A4A0D9392B0C74A3002A0F7B /* AppDelegate.swift in Sources */,
+				A4A0D93B2B0C74A3002A0F7B /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4A0D94A2B0C74A7002A0F7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4A0D9532B0C74A7002A0F7B /* CaploitteNewsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4A0D9542B0C74A7002A0F7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4A0D95D2B0C74A7002A0F7B /* CaploitteNewsUITests.swift in Sources */,
+				A4A0D95F2B0C74A7002A0F7B /* CaploitteNewsUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A4A0D9502B0C74A7002A0F7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4A0D9342B0C74A3002A0F7B /* CaploitteNews */;
+			targetProxy = A4A0D94F2B0C74A7002A0F7B /* PBXContainerItemProxy */;
+		};
+		A4A0D95A2B0C74A7002A0F7B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4A0D9342B0C74A3002A0F7B /* CaploitteNews */;
+			targetProxy = A4A0D9592B0C74A7002A0F7B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A4A0D93E2B0C74A3002A0F7B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4A0D93F2B0C74A3002A0F7B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A4A0D9462B0C74A7002A0F7B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4A0D9472B0C74A7002A0F7B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A4A0D9602B0C74A7002A0F7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A4A0D9612B0C74A7002A0F7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A4A0D9632B0C74A7002A0F7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RE53Y2ZN4H;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CaploitteNews/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gankewala.CaploitteNews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A4A0D9642B0C74A7002A0F7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RE53Y2ZN4H;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CaploitteNews/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gankewala.CaploitteNews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A4A0D9662B0C74A7002A0F7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RE53Y2ZN4H;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gankewala.CaploitteNewsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CaploitteNews.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CaploitteNews";
+			};
+			name = Debug;
+		};
+		A4A0D9672B0C74A7002A0F7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RE53Y2ZN4H;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gankewala.CaploitteNewsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CaploitteNews.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CaploitteNews";
+			};
+			name = Release;
+		};
+		A4A0D9692B0C74A7002A0F7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RE53Y2ZN4H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gankewala.CaploitteNewsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CaploitteNews;
+			};
+			name = Debug;
+		};
+		A4A0D96A2B0C74A7002A0F7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = RE53Y2ZN4H;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gankewala.CaploitteNewsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CaploitteNews;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A4A0D9302B0C74A3002A0F7B /* Build configuration list for PBXProject "CaploitteNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4A0D9602B0C74A7002A0F7B /* Debug */,
+				A4A0D9612B0C74A7002A0F7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4A0D9622B0C74A7002A0F7B /* Build configuration list for PBXNativeTarget "CaploitteNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4A0D9632B0C74A7002A0F7B /* Debug */,
+				A4A0D9642B0C74A7002A0F7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4A0D9652B0C74A7002A0F7B /* Build configuration list for PBXNativeTarget "CaploitteNewsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4A0D9662B0C74A7002A0F7B /* Debug */,
+				A4A0D9672B0C74A7002A0F7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4A0D9682B0C74A7002A0F7B /* Build configuration list for PBXNativeTarget "CaploitteNewsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4A0D9692B0C74A7002A0F7B /* Debug */,
+				A4A0D96A2B0C74A7002A0F7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A4A0D9412B0C74A3002A0F7B /* CaploitteNews.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A4A0D9422B0C74A3002A0F7B /* CaploitteNews.xcdatamodel */,
+			);
+			currentVersion = A4A0D9422B0C74A3002A0F7B /* CaploitteNews.xcdatamodel */;
+			path = CaploitteNews.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A4A0D92D2B0C74A3002A0F7B /* Project object */;
+}
