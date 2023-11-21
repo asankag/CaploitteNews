@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		A4A0D9392B0C74A3002A0F7B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A0D9382B0C74A3002A0F7B /* AppDelegate.swift */; };
 		A4A0D93B2B0C74A3002A0F7B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A0D93A2B0C74A3002A0F7B /* SceneDelegate.swift */; };
-		A4A0D93D2B0C74A3002A0F7B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A0D93C2B0C74A3002A0F7B /* ViewController.swift */; };
+		A4A0D93D2B0C74A3002A0F7B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A0D93C2B0C74A3002A0F7B /* LoginViewController.swift */; };
 		A4A0D9402B0C74A3002A0F7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4A0D93E2B0C74A3002A0F7B /* Main.storyboard */; };
 		A4A0D9432B0C74A3002A0F7B /* CaploitteNews.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A4A0D9412B0C74A3002A0F7B /* CaploitteNews.xcdatamodeld */; };
 		A4A0D9452B0C74A7002A0F7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4A0D9442B0C74A7002A0F7B /* Assets.xcassets */; };
@@ -17,6 +17,56 @@
 		A4A0D9532B0C74A7002A0F7B /* CaploitteNewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A0D9522B0C74A7002A0F7B /* CaploitteNewsTests.swift */; };
 		A4A0D95D2B0C74A7002A0F7B /* CaploitteNewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A0D95C2B0C74A7002A0F7B /* CaploitteNewsUITests.swift */; };
 		A4A0D95F2B0C74A7002A0F7B /* CaploitteNewsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A0D95E2B0C74A7002A0F7B /* CaploitteNewsUITestsLaunchTests.swift */; };
+		A4A0D9872B0C8AD5002A0F7B /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4A0D9732B0C8AD5002A0F7B /* Nunito-Regular.ttf */; };
+		A4A0D9882B0C8AD5002A0F7B /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4A0D9732B0C8AD5002A0F7B /* Nunito-Regular.ttf */; };
+		A4A0D9892B0C8AD5002A0F7B /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4A0D9732B0C8AD5002A0F7B /* Nunito-Regular.ttf */; };
+		A4A0D9902B0C8AD6002A0F7B /* Nunito-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4A0D9762B0C8AD5002A0F7B /* Nunito-Black.ttf */; };
+		A4A0D9912B0C8AD6002A0F7B /* Nunito-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4A0D9762B0C8AD5002A0F7B /* Nunito-Black.ttf */; };
+		A4A0D9922B0C8AD6002A0F7B /* Nunito-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4A0D9762B0C8AD5002A0F7B /* Nunito-Black.ttf */; };
+		A4A0D9962B0C8AD6002A0F7B /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4A0D9782B0C8AD5002A0F7B /* Nunito-Bold.ttf */; };
+		A4A0D9972B0C8AD6002A0F7B /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4A0D9782B0C8AD5002A0F7B /* Nunito-Bold.ttf */; };
+		A4A0D9982B0C8AD6002A0F7B /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4A0D9782B0C8AD5002A0F7B /* Nunito-Bold.ttf */; };
+		A4A0D9A22B0C8AD6002A0F7B /* Nunito-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4A0D97C2B0C8AD5002A0F7B /* Nunito-Medium.ttf */; };
+		A4A0D9A32B0C8AD6002A0F7B /* Nunito-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4A0D97C2B0C8AD5002A0F7B /* Nunito-Medium.ttf */; };
+		A4A0D9A42B0C8AD6002A0F7B /* Nunito-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4A0D97C2B0C8AD5002A0F7B /* Nunito-Medium.ttf */; };
+		A4A0D9A82B0C8AD6002A0F7B /* Nunito-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4A0D97E2B0C8AD5002A0F7B /* Nunito-SemiBold.ttf */; };
+		A4A0D9A92B0C8AD6002A0F7B /* Nunito-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4A0D97E2B0C8AD5002A0F7B /* Nunito-SemiBold.ttf */; };
+		A4A0D9AA2B0C8AD6002A0F7B /* Nunito-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4A0D97E2B0C8AD5002A0F7B /* Nunito-SemiBold.ttf */; };
+		A4A0D9B32B0C8D86002A0F7B /* NewYorkMedium-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4A0D9B12B0C8D86002A0F7B /* NewYorkMedium-Bold.ttf */; };
+		A4A0D9B42B0C8D86002A0F7B /* NewYorkMedium-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4A0D9B12B0C8D86002A0F7B /* NewYorkMedium-Bold.ttf */; };
+		A4A0D9B52B0C8D86002A0F7B /* NewYorkMedium-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4A0D9B12B0C8D86002A0F7B /* NewYorkMedium-Bold.ttf */; };
+		A4A0D9B62B0C8D86002A0F7B /* NewYorkMedium-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4A0D9B22B0C8D86002A0F7B /* NewYorkMedium-Semibold.ttf */; };
+		A4A0D9B72B0C8D86002A0F7B /* NewYorkMedium-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4A0D9B22B0C8D86002A0F7B /* NewYorkMedium-Semibold.ttf */; };
+		A4A0D9B82B0C8D86002A0F7B /* NewYorkMedium-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4A0D9B22B0C8D86002A0F7B /* NewYorkMedium-Semibold.ttf */; };
+		A4A0D9BA2B0C8DE4002A0F7B /* Nunito-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4A0D9B92B0C8DE4002A0F7B /* Nunito-Light.ttf */; };
+		A4A0D9BB2B0C8DE4002A0F7B /* Nunito-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4A0D9B92B0C8DE4002A0F7B /* Nunito-Light.ttf */; };
+		A4A0D9BC2B0C8DE4002A0F7B /* Nunito-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4A0D9B92B0C8DE4002A0F7B /* Nunito-Light.ttf */; };
+		A4A0D9C02B0D149D002A0F7B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A0D9BF2B0D149D002A0F7B /* Constants.swift */; };
+		A4A0D9C12B0D149D002A0F7B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A0D9BF2B0D149D002A0F7B /* Constants.swift */; };
+		A4A0D9C22B0D149D002A0F7B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A0D9BF2B0D149D002A0F7B /* Constants.swift */; };
+		A4A0D9C42B0D1501002A0F7B /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A0D9C32B0D1501002A0F7B /* AppFonts.swift */; };
+		A4A0D9C52B0D1501002A0F7B /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A0D9C32B0D1501002A0F7B /* AppFonts.swift */; };
+		A4A0D9C62B0D1501002A0F7B /* AppFonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A0D9C32B0D1501002A0F7B /* AppFonts.swift */; };
+		A4A0D9C82B0D1543002A0F7B /* UsableFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A0D9C72B0D1543002A0F7B /* UsableFunctions.swift */; };
+		A4A0D9C92B0D1543002A0F7B /* UsableFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A0D9C72B0D1543002A0F7B /* UsableFunctions.swift */; };
+		A4A0D9CA2B0D1543002A0F7B /* UsableFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A0D9C72B0D1543002A0F7B /* UsableFunctions.swift */; };
+		A4A0D9CC2B0D158E002A0F7B /* ViewControllerLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A0D9CB2B0D158E002A0F7B /* ViewControllerLocator.swift */; };
+		A4A0D9CD2B0D158E002A0F7B /* ViewControllerLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A0D9CB2B0D158E002A0F7B /* ViewControllerLocator.swift */; };
+		A4A0D9CE2B0D158E002A0F7B /* ViewControllerLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A0D9CB2B0D158E002A0F7B /* ViewControllerLocator.swift */; };
+		A4A0D9D12B0D15FB002A0F7B /* ButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A0D9D02B0D15FB002A0F7B /* ButtonExtensions.swift */; };
+		A4A0D9D22B0D15FB002A0F7B /* ButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A0D9D02B0D15FB002A0F7B /* ButtonExtensions.swift */; };
+		A4A0D9D32B0D15FB002A0F7B /* ButtonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A0D9D02B0D15FB002A0F7B /* ButtonExtensions.swift */; };
+		A4A0D9D62B0D177A002A0F7B /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = A4A0D9D52B0D177A002A0F7B /* SDWebImage */; };
+		A4A0D9D82B0D194D002A0F7B /* SignupViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A0D9D72B0D194D002A0F7B /* SignupViewcontroller.swift */; };
+		A4A0D9D92B0D194D002A0F7B /* SignupViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A0D9D72B0D194D002A0F7B /* SignupViewcontroller.swift */; };
+		A4A0D9DA2B0D194D002A0F7B /* SignupViewcontroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A0D9D72B0D194D002A0F7B /* SignupViewcontroller.swift */; };
+		A4A0D9DC2B0D29E9002A0F7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4A0D9442B0C74A7002A0F7B /* Assets.xcassets */; };
+		A4A0D9DD2B0D29EA002A0F7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4A0D9442B0C74A7002A0F7B /* Assets.xcassets */; };
+		A4A0D9DF2B0D2E26002A0F7B /* UITextFieldExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A0D9DE2B0D2E26002A0F7B /* UITextFieldExtensions.swift */; };
+		A4A0D9E12B0D32D5002A0F7B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A0D9E02B0D32D5002A0F7B /* User.swift */; };
+		A4A0D9E42B0D46A2002A0F7B /* RNCryptor in Frameworks */ = {isa = PBXBuildFile; productRef = A4A0D9E32B0D46A2002A0F7B /* RNCryptor */; };
+		A4A0D9E62B0D4B3F002A0F7B /* Dashboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4A0D9E52B0D4B3F002A0F7B /* Dashboard.storyboard */; };
+		A4A0D9E82B0D4B76002A0F7B /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A0D9E72B0D4B76002A0F7B /* DashboardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +90,7 @@
 		A4A0D9352B0C74A3002A0F7B /* CaploitteNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CaploitteNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4A0D9382B0C74A3002A0F7B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4A0D93A2B0C74A3002A0F7B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A4A0D93C2B0C74A3002A0F7B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A4A0D93C2B0C74A3002A0F7B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		A4A0D93F2B0C74A3002A0F7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A4A0D9422B0C74A3002A0F7B /* CaploitteNews.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CaploitteNews.xcdatamodel; sourceTree = "<group>"; };
 		A4A0D9442B0C74A7002A0F7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +101,24 @@
 		A4A0D9582B0C74A7002A0F7B /* CaploitteNewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CaploitteNewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4A0D95C2B0C74A7002A0F7B /* CaploitteNewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaploitteNewsUITests.swift; sourceTree = "<group>"; };
 		A4A0D95E2B0C74A7002A0F7B /* CaploitteNewsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaploitteNewsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A4A0D9732B0C8AD5002A0F7B /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
+		A4A0D9762B0C8AD5002A0F7B /* Nunito-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Black.ttf"; sourceTree = "<group>"; };
+		A4A0D9782B0C8AD5002A0F7B /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
+		A4A0D97C2B0C8AD5002A0F7B /* Nunito-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Medium.ttf"; sourceTree = "<group>"; };
+		A4A0D97E2B0C8AD5002A0F7B /* Nunito-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-SemiBold.ttf"; sourceTree = "<group>"; };
+		A4A0D9B12B0C8D86002A0F7B /* NewYorkMedium-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkMedium-Bold.ttf"; sourceTree = "<group>"; };
+		A4A0D9B22B0C8D86002A0F7B /* NewYorkMedium-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NewYorkMedium-Semibold.ttf"; sourceTree = "<group>"; };
+		A4A0D9B92B0C8DE4002A0F7B /* Nunito-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Light.ttf"; sourceTree = "<group>"; };
+		A4A0D9BF2B0D149D002A0F7B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		A4A0D9C32B0D1501002A0F7B /* AppFonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFonts.swift; sourceTree = "<group>"; };
+		A4A0D9C72B0D1543002A0F7B /* UsableFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsableFunctions.swift; sourceTree = "<group>"; };
+		A4A0D9CB2B0D158E002A0F7B /* ViewControllerLocator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerLocator.swift; sourceTree = "<group>"; };
+		A4A0D9D02B0D15FB002A0F7B /* ButtonExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonExtensions.swift; sourceTree = "<group>"; };
+		A4A0D9D72B0D194D002A0F7B /* SignupViewcontroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupViewcontroller.swift; sourceTree = "<group>"; };
+		A4A0D9DE2B0D2E26002A0F7B /* UITextFieldExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtensions.swift; sourceTree = "<group>"; };
+		A4A0D9E02B0D32D5002A0F7B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A4A0D9E52B0D4B3F002A0F7B /* Dashboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Dashboard.storyboard; sourceTree = "<group>"; };
+		A4A0D9E72B0D4B76002A0F7B /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +126,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4A0D9E42B0D46A2002A0F7B /* RNCryptor in Frameworks */,
+				A4A0D9D62B0D177A002A0F7B /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,10 +176,11 @@
 				A4A0D96D2B0C7532002A0F7B /* Models */,
 				A4A0D96E2B0C753F002A0F7B /* Common */,
 				A4A0D96F2B0C7564002A0F7B /* Controllers */,
-				A4A0D93C2B0C74A3002A0F7B /* ViewController.swift */,
-				A4A0D93E2B0C74A3002A0F7B /* Main.storyboard */,
+				A4A0D9DB2B0D1D77002A0F7B /* View */,
+				A4A0D9702B0C8ABA002A0F7B /* Fonts */,
+				A4A0D9BD2B0D1455002A0F7B /* Utills */,
+				A4A0D9CF2B0D15D3002A0F7B /* Extensions */,
 				A4A0D9442B0C74A7002A0F7B /* Assets.xcassets */,
-				A4A0D9462B0C74A7002A0F7B /* LaunchScreen.storyboard */,
 				A4A0D9492B0C74A7002A0F7B /* Info.plist */,
 				A4A0D9412B0C74A3002A0F7B /* CaploitteNews.xcdatamodeld */,
 			);
@@ -150,6 +221,7 @@
 		A4A0D96D2B0C7532002A0F7B /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				A4A0D9E02B0D32D5002A0F7B /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -166,8 +238,56 @@
 		A4A0D96F2B0C7564002A0F7B /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				A4A0D93C2B0C74A3002A0F7B /* LoginViewController.swift */,
+				A4A0D9D72B0D194D002A0F7B /* SignupViewcontroller.swift */,
+				A4A0D9E72B0D4B76002A0F7B /* DashboardViewController.swift */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A4A0D9702B0C8ABA002A0F7B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A4A0D9B12B0C8D86002A0F7B /* NewYorkMedium-Bold.ttf */,
+				A4A0D9B22B0C8D86002A0F7B /* NewYorkMedium-Semibold.ttf */,
+				A4A0D9762B0C8AD5002A0F7B /* Nunito-Black.ttf */,
+				A4A0D9B92B0C8DE4002A0F7B /* Nunito-Light.ttf */,
+				A4A0D9782B0C8AD5002A0F7B /* Nunito-Bold.ttf */,
+				A4A0D97C2B0C8AD5002A0F7B /* Nunito-Medium.ttf */,
+				A4A0D9732B0C8AD5002A0F7B /* Nunito-Regular.ttf */,
+				A4A0D97E2B0C8AD5002A0F7B /* Nunito-SemiBold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		A4A0D9BD2B0D1455002A0F7B /* Utills */ = {
+			isa = PBXGroup;
+			children = (
+				A4A0D9BF2B0D149D002A0F7B /* Constants.swift */,
+				A4A0D9C32B0D1501002A0F7B /* AppFonts.swift */,
+				A4A0D9C72B0D1543002A0F7B /* UsableFunctions.swift */,
+				A4A0D9CB2B0D158E002A0F7B /* ViewControllerLocator.swift */,
+			);
+			path = Utills;
+			sourceTree = "<group>";
+		};
+		A4A0D9CF2B0D15D3002A0F7B /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A4A0D9D02B0D15FB002A0F7B /* ButtonExtensions.swift */,
+				A4A0D9DE2B0D2E26002A0F7B /* UITextFieldExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A4A0D9DB2B0D1D77002A0F7B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A4A0D9462B0C74A7002A0F7B /* LaunchScreen.storyboard */,
+				A4A0D93E2B0C74A3002A0F7B /* Main.storyboard */,
+				A4A0D9E52B0D4B3F002A0F7B /* Dashboard.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +306,10 @@
 			dependencies = (
 			);
 			name = CaploitteNews;
+			packageProductDependencies = (
+				A4A0D9D52B0D177A002A0F7B /* SDWebImage */,
+				A4A0D9E32B0D46A2002A0F7B /* RNCryptor */,
+			);
 			productName = CaploitteNews;
 			productReference = A4A0D9352B0C74A3002A0F7B /* CaploitteNews.app */;
 			productType = "com.apple.product-type.application";
@@ -258,6 +382,10 @@
 				Base,
 			);
 			mainGroup = A4A0D92C2B0C74A3002A0F7B;
+			packageReferences = (
+				A4A0D9D42B0D177A002A0F7B /* XCRemoteSwiftPackageReference "SDWebImage" */,
+				A4A0D9E22B0D46A2002A0F7B /* XCRemoteSwiftPackageReference "RNCryptor" */,
+			);
 			productRefGroup = A4A0D9362B0C74A3002A0F7B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -274,9 +402,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4A0D9872B0C8AD5002A0F7B /* Nunito-Regular.ttf in Resources */,
+				A4A0D9A82B0C8AD6002A0F7B /* Nunito-SemiBold.ttf in Resources */,
 				A4A0D9482B0C74A7002A0F7B /* LaunchScreen.storyboard in Resources */,
 				A4A0D9452B0C74A7002A0F7B /* Assets.xcassets in Resources */,
+				A4A0D9BA2B0C8DE4002A0F7B /* Nunito-Light.ttf in Resources */,
+				A4A0D9962B0C8AD6002A0F7B /* Nunito-Bold.ttf in Resources */,
 				A4A0D9402B0C74A3002A0F7B /* Main.storyboard in Resources */,
+				A4A0D9E62B0D4B3F002A0F7B /* Dashboard.storyboard in Resources */,
+				A4A0D9B32B0C8D86002A0F7B /* NewYorkMedium-Bold.ttf in Resources */,
+				A4A0D9902B0C8AD6002A0F7B /* Nunito-Black.ttf in Resources */,
+				A4A0D9B62B0C8D86002A0F7B /* NewYorkMedium-Semibold.ttf in Resources */,
+				A4A0D9A22B0C8AD6002A0F7B /* Nunito-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +421,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4A0D9B42B0C8D86002A0F7B /* NewYorkMedium-Bold.ttf in Resources */,
+				A4A0D9A92B0C8AD6002A0F7B /* Nunito-SemiBold.ttf in Resources */,
+				A4A0D9882B0C8AD5002A0F7B /* Nunito-Regular.ttf in Resources */,
+				A4A0D9A32B0C8AD6002A0F7B /* Nunito-Medium.ttf in Resources */,
+				A4A0D9B72B0C8D86002A0F7B /* NewYorkMedium-Semibold.ttf in Resources */,
+				A4A0D9972B0C8AD6002A0F7B /* Nunito-Bold.ttf in Resources */,
+				A4A0D9BB2B0C8DE4002A0F7B /* Nunito-Light.ttf in Resources */,
+				A4A0D9DC2B0D29E9002A0F7B /* Assets.xcassets in Resources */,
+				A4A0D9912B0C8AD6002A0F7B /* Nunito-Black.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +437,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4A0D9B52B0C8D86002A0F7B /* NewYorkMedium-Bold.ttf in Resources */,
+				A4A0D9AA2B0C8AD6002A0F7B /* Nunito-SemiBold.ttf in Resources */,
+				A4A0D9892B0C8AD5002A0F7B /* Nunito-Regular.ttf in Resources */,
+				A4A0D9A42B0C8AD6002A0F7B /* Nunito-Medium.ttf in Resources */,
+				A4A0D9B82B0C8D86002A0F7B /* NewYorkMedium-Semibold.ttf in Resources */,
+				A4A0D9982B0C8AD6002A0F7B /* Nunito-Bold.ttf in Resources */,
+				A4A0D9BC2B0C8DE4002A0F7B /* Nunito-Light.ttf in Resources */,
+				A4A0D9DD2B0D29EA002A0F7B /* Assets.xcassets in Resources */,
+				A4A0D9922B0C8AD6002A0F7B /* Nunito-Black.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,8 +456,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4A0D9D82B0D194D002A0F7B /* SignupViewcontroller.swift in Sources */,
+				A4A0D9C42B0D1501002A0F7B /* AppFonts.swift in Sources */,
+				A4A0D9CC2B0D158E002A0F7B /* ViewControllerLocator.swift in Sources */,
+				A4A0D9DF2B0D2E26002A0F7B /* UITextFieldExtensions.swift in Sources */,
+				A4A0D9C02B0D149D002A0F7B /* Constants.swift in Sources */,
+				A4A0D9D12B0D15FB002A0F7B /* ButtonExtensions.swift in Sources */,
+				A4A0D9C82B0D1543002A0F7B /* UsableFunctions.swift in Sources */,
+				A4A0D9E82B0D4B76002A0F7B /* DashboardViewController.swift in Sources */,
 				A4A0D9432B0C74A3002A0F7B /* CaploitteNews.xcdatamodeld in Sources */,
-				A4A0D93D2B0C74A3002A0F7B /* ViewController.swift in Sources */,
+				A4A0D9E12B0D32D5002A0F7B /* User.swift in Sources */,
+				A4A0D93D2B0C74A3002A0F7B /* LoginViewController.swift in Sources */,
 				A4A0D9392B0C74A3002A0F7B /* AppDelegate.swift in Sources */,
 				A4A0D93B2B0C74A3002A0F7B /* SceneDelegate.swift in Sources */,
 			);
@@ -312,7 +476,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4A0D9C52B0D1501002A0F7B /* AppFonts.swift in Sources */,
+				A4A0D9C92B0D1543002A0F7B /* UsableFunctions.swift in Sources */,
 				A4A0D9532B0C74A7002A0F7B /* CaploitteNewsTests.swift in Sources */,
+				A4A0D9D22B0D15FB002A0F7B /* ButtonExtensions.swift in Sources */,
+				A4A0D9D92B0D194D002A0F7B /* SignupViewcontroller.swift in Sources */,
+				A4A0D9C12B0D149D002A0F7B /* Constants.swift in Sources */,
+				A4A0D9CD2B0D158E002A0F7B /* ViewControllerLocator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,8 +490,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4A0D9D32B0D15FB002A0F7B /* ButtonExtensions.swift in Sources */,
+				A4A0D9CA2B0D1543002A0F7B /* UsableFunctions.swift in Sources */,
+				A4A0D9DA2B0D194D002A0F7B /* SignupViewcontroller.swift in Sources */,
+				A4A0D9C62B0D1501002A0F7B /* AppFonts.swift in Sources */,
 				A4A0D95D2B0C74A7002A0F7B /* CaploitteNewsUITests.swift in Sources */,
+				A4A0D9CE2B0D158E002A0F7B /* ViewControllerLocator.swift in Sources */,
 				A4A0D95F2B0C74A7002A0F7B /* CaploitteNewsUITestsLaunchTests.swift in Sources */,
+				A4A0D9C22B0D149D002A0F7B /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -650,6 +826,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A4A0D9D42B0D177A002A0F7B /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		A4A0D9E22B0D46A2002A0F7B /* XCRemoteSwiftPackageReference "RNCryptor" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RNCryptor/RNCryptor.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A4A0D9D52B0D177A002A0F7B /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4A0D9D42B0D177A002A0F7B /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+		A4A0D9E32B0D46A2002A0F7B /* RNCryptor */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4A0D9E22B0D46A2002A0F7B /* XCRemoteSwiftPackageReference "RNCryptor" */;
+			productName = RNCryptor;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		A4A0D9412B0C74A3002A0F7B /* CaploitteNews.xcdatamodeld */ = {
