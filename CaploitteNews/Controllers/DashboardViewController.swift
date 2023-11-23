@@ -27,6 +27,7 @@ class DashboardViewController: UIViewController {
     private var dataSource : LatestNewsDataSource<LatestNewsCollectionViewCell,Articles>!
     private var dataSourceForTableView : FilteredNewsDataSource<NewsTableViewCell,Articles>!
     var theNewsItems: [Articles]?
+    var filteredNewsItems: [Articles]?
     var categories = [String]()
     
     override func viewDidLoad() {
@@ -42,16 +43,14 @@ class DashboardViewController: UIViewController {
         menuCollectionView.dataSource = self
         menuCollectionView.isUserInteractionEnabled = true
         
+        getCountry()
+        
         let menuLayout = UICollectionViewFlowLayout()
         menuLayout.itemSize = CGSize(width: 100, height: 30)
         menuLayout.scrollDirection = .horizontal
         menuLayout.minimumLineSpacing = 10
         menuLayout.minimumInteritemSpacing = 10
         self.menuCollectionView.collectionViewLayout = menuLayout
-        
-        //        latestNewsCollectionView.delegate = self
-        //        latestNewsCollectionView.dataSource = self
-        //        latestNewsCollectionView.isUserInteractionEnabled = true
         
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = CGSize(width: 320, height: 240)
@@ -98,11 +97,7 @@ class DashboardViewController: UIViewController {
     }
     
     func UiChanges () {
-        categories.append("Healthy")
-        categories.append("Technology")
-        categories.append("Finance")
-        categories.append("Arts")
-        categories.append("Sports")
+        categories = ["General", "Business", "Entertainment", "Health", "Science", "Sports", "Technology"]
         
         bottomTabBarView.layer.cornerRadius = 28
     }
@@ -115,7 +110,7 @@ class DashboardViewController: UIViewController {
         
         self.dashboardFiltedViewModel = FilteredDashboardViewModel()
         self.dashboardFiltedViewModel.bindFiltedNewsViewModelToController = {
-            self.updateTableViewDataSource(selectedCategories: "Healthy")
+            self.updateTableViewDataSource(selectedCategories: "Generalda")
         }
     }
     
@@ -135,6 +130,7 @@ class DashboardViewController: UIViewController {
     func updateTableViewDataSource(selectedCategories: String) {
         self.dataSourceForTableView = FilteredNewsDataSource(cellIdentifier: "NewsTableViewCell", items: self.dashboardFiltedViewModel.newsData.articles ?? [], configureCell: { cell, newsItem in
             cell.registorCell(image: newsItem.urlToImage ?? "", author: newsItem.author ?? "", titel: newsItem.title ?? "", datetime: newsItem.publishedAt ?? "")
+            self.filteredNewsItems = self.dashboardFiltedViewModel.newsData.articles
         })
         
         DispatchQueue.main.async {
@@ -150,6 +146,22 @@ class DashboardViewController: UIViewController {
         newViewController.modalPresentationStyle = .fullScreen
         newViewController.theNewsItem = item
         self.present(newViewController, animated: true, completion: nil)
+    }
+    
+    func getCountry(){
+        let langStr = Locale.current.regionCode?.lowercased()
+        
+        let coutryArray = ["ae", "ar", "at", "au", "be", "bg", "br", "ca", "ch", "co", "cu", "cz", "de", "eg", "fr", "gb", "gr", "hk", "hu", "id", "ie", "il", "in", "it", "jp", "kr", "lt", "lv", "ma", "mx", "my", "ng", "nl", "no", "nz", "ph", "pl", "pt", "ro", "rs", "ru", "sa", "se", "sg", "si", "si", "sk", "th", "tr", "tw", "ua", "us", "ve", "za"]
+        
+        if coutryArray.contains(langStr ?? "us") {
+            UserDefaults.standard.set(langStr, forKey: Constants.UserDefaultsName.regionCode)
+        }
+    }
+}
+
+extension DashboardViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        goToDetailView(item: (self.filteredNewsItems?[indexPath.row])!)
     }
 }
 

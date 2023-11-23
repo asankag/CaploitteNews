@@ -10,6 +10,7 @@ import SDWebImage
 
 class LatestNewsCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var gradientImage: UIImageView!
     @IBOutlet weak var cellDescription: UILabel!
     @IBOutlet weak var cellTopic: UILabel!
     @IBOutlet weak var cellAuther: UILabel!
@@ -19,6 +20,7 @@ class LatestNewsCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         cellImage.layer.cornerRadius = 10
+        gradientImage.layer.cornerRadius = 10
     }
     
     public func latestNewsCellRegister(imageName: String, auther: String, topic: String, description: String) {

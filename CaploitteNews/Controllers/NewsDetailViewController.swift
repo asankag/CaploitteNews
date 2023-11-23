@@ -54,7 +54,7 @@ class NewsDetailViewController: UIViewController {
         let date = isoFormatter.date(from: string)!
         
         let formatter = DateFormatter()
-        formatter.dateFormat = "MMM d yyyy, h:mm:ss a"
+        formatter.dateFormat = "EEEE, d MMM yyyy"
         let formattedDateInString = formatter.string(from: date)
         
         titelTextView.text = theNewsItem?.title

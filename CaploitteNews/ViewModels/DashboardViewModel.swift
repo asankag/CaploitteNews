@@ -21,11 +21,12 @@ class DashboardViewModel: NSObject {
     override init() {
         super.init()
         self.apiService = APIService()
-        getHeadlineData()
+        let regionCode = UserDefaults.standard.string(forKey: Constants.UserDefaultsName.regionCode) ?? "us"
+        getHeadlineData(selectedCountry: regionCode)
     }
     
-    func getHeadlineData() {
-        self.apiService.apiToGetTopHeadlineData { (newsData) in
+    func getHeadlineData(selectedCountry: String) {
+        self.apiService.apiToGetTopHeadlineData(selectedCountry: selectedCountry) { (newsData) in
             self.newsData = newsData
         }
     }

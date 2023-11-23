@@ -33,28 +33,28 @@ class SignupViewcontroller: UIViewController {
     @IBAction func createButtonPressed(_ sender: UIButton) {
 
         guard let username = userNameTextField.text, username != "" && username.count >= 6 else {
-            self.present(ReUsables.showAlert(titel: Constants.Strings.alertsHeader.alertTitel, message: Constants.Strings.alerts.userNameIssue), animated: true)
+            self.present(ReUsables.showAlert(titel: Constants.Strings.alertsHeader.alertTitel, message: Constants.Strings.alertsString.userNameIssue), animated: true)
             return
         }
         
         guard let email = EmailTextField.text, isValidEmail(email) else {
-            self.present(ReUsables.showAlert(titel: Constants.Strings.alertsHeader.alertTitel, message: Constants.Strings.alerts.emailIssue), animated: true)
+            self.present(ReUsables.showAlert(titel: Constants.Strings.alertsHeader.alertTitel, message: Constants.Strings.alertsString.emailIssue), animated: true)
             return
         }
         
         guard let password = passwordTextField.text, isValidPassword(password) else {
-            self.present(ReUsables.showAlert(titel: Constants.Strings.alertsHeader.alertTitel, message: Constants.Strings.alerts.passwordError), animated: true)
+            self.present(ReUsables.showAlert(titel: Constants.Strings.alertsHeader.alertTitel, message: Constants.Strings.alertsString.passwordError), animated: true)
             return
         }
         print(password)
         
         guard let reEnterpassword = reEnterPasswordTextField.text, reEnterpassword == password else {
-            self.present(ReUsables.showAlert(titel: Constants.Strings.alertsHeader.alertTitel, message: Constants.Strings.alerts.reEnterPasswordError), animated: true)
+            self.present(ReUsables.showAlert(titel: Constants.Strings.alertsHeader.alertTitel, message: Constants.Strings.alertsString.reEnterPasswordError), animated: true)
             return
         }
         print(reEnterpassword)
         if userExist(userName: username) {
-            self.present(ReUsables.showAlert(titel: Constants.Strings.alertsHeader.alertTitel, message: Constants.Strings.alerts.sameUserExist), animated: true)
+            self.present(ReUsables.showAlert(titel: Constants.Strings.alertsHeader.alertTitel, message: Constants.Strings.alertsString.sameUserExist), animated: true)
         } else {
             var newArray = [User]()
             

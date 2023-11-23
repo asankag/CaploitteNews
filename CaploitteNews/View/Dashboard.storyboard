@@ -512,16 +512,17 @@
                             </button>
                             <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="Fcq-yU-TRo">
                                 <rect key="frame" x="72" y="39" width="302" height="56"/>
+                                <color key="tintColor" name="Primary Color"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="Uzd-3r-ssV" id="xN1-D4-wZg"/>
                                 </connections>
                             </searchBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="XuM-cW-732">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="XuM-cW-732">
                                 <rect key="frame" x="0.0" y="111" width="390" height="733"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <view key="tableHeaderView" contentMode="scaleToFill" id="4u7-kQ-39M">
-                                    <rect key="frame" x="0.0" y="0.0" width="390" height="120"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="390" height="77"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OhO-iN-RKb">
@@ -562,9 +563,8 @@
                                                 <constraint firstAttribute="trailing" secondItem="raa-1q-fxC" secondAttribute="trailing" id="y9t-dU-YXw"/>
                                             </constraints>
                                         </view>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VHE-vW-Xr8">
-                                            <rect key="frame" x="16" y="75" width="358" height="21"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VHE-vW-Xr8">
+                                            <rect key="frame" x="16" y="58.000000000000007" width="358" height="19.333333333333336"/>
                                             <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -573,11 +573,17 @@
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
                                         <constraint firstItem="OhO-iN-RKb" firstAttribute="leading" secondItem="4u7-kQ-39M" secondAttribute="leading" constant="16" id="9xq-bR-U9G"/>
+                                        <constraint firstAttribute="trailing" secondItem="VHE-vW-Xr8" secondAttribute="trailing" constant="16" id="Ecs-ec-Hxo"/>
                                         <constraint firstItem="OhO-iN-RKb" firstAttribute="top" secondItem="4u7-kQ-39M" secondAttribute="top" id="Nlu-7G-ySg"/>
                                         <constraint firstAttribute="trailing" secondItem="OhO-iN-RKb" secondAttribute="trailing" constant="16" id="QgY-KG-GcU"/>
-                                        <constraint firstAttribute="height" constant="120" id="U3R-CL-3oS"/>
+                                        <constraint firstItem="VHE-vW-Xr8" firstAttribute="top" secondItem="OhO-iN-RKb" secondAttribute="bottom" constant="8" id="SNX-Qr-xlD"/>
+                                        <constraint firstAttribute="height" constant="100" id="U3R-CL-3oS"/>
+                                        <constraint firstItem="VHE-vW-Xr8" firstAttribute="leading" secondItem="4u7-kQ-39M" secondAttribute="leading" constant="16" id="uz9-uF-QGu"/>
                                     </constraints>
                                 </view>
+                                <connections>
+                                    <outlet property="delegate" destination="Uzd-3r-ssV" id="bgB-zR-bUB"/>
+                                </connections>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h3f-PR-vJy">
                                 <rect key="frame" x="0.0" y="544" width="390" height="300"/>
@@ -715,6 +721,8 @@
                         <outlet property="resetButtonOutlet" destination="7Th-4k-YeQ" id="4n1-NO-jRB"/>
                         <outlet property="resultCountLabel" destination="VHE-vW-Xr8" id="JdE-AB-dLg"/>
                         <outlet property="saveButtonOutlet" destination="DyA-6w-VNM" id="dCz-I3-GSp"/>
+                        <outlet property="searchBar" destination="Fcq-yU-TRo" id="3F3-wA-Ed7"/>
+                        <outlet property="tableView" destination="XuM-cW-732" id="80n-sA-n3I"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="82e-Ll-fpm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

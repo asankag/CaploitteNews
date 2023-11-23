@@ -21,7 +21,7 @@ class FilteredDashboardViewModel: NSObject {
     override init() {
         super.init()
         self.apiService = APIService()
-        getHeadlineData(keyword: "Healthy")
+        getHeadlineData(keyword: "General")
     }
     
     func getHeadlineData(keyword: String) {

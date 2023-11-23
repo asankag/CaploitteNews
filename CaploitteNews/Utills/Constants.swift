@@ -23,7 +23,7 @@ struct Constants {
     }
     
     struct APIKeys {
-        static let NewsAPIkey = "1ff972793370429c8ad4623baee43bd9"
+        static let NewsAPIkey = "12549b96953b49628247e79cfd6a255b"
     }
     
     struct EncryptionKey {
@@ -38,21 +38,24 @@ struct Constants {
     
     struct UserDefaultsName {
         static let userArray = "USERARRAY"
+        static let regionCode = "REGIONCODE"
     }
     
     struct Strings {
         
         struct alertsHeader {
             static let alertTitel = "Alert"
+            static let errorTitel = "Error"
         }
         
-        struct alerts {
+        struct alertsString {
             static let sameUserExist = "User name already exist"
             static let emailIssue = "E mail not correct"
             static let userNameIssue = "User name not correct"
             static let userNameOrPasswordNotCorrect = "User name or password not correct"
             static let reEnterPasswordError = "Password and re enter password mismatch"
             static let passwordError = "Passward must contain least one uppercase, least one digit, least one symbol, least one lowercase, min 6 characters total"
+            static let limitedRequest = "You have made too many requests recently. Developer accounts are limited to 100 requests over a 24 hour period (50 requests available every 12 hours). Please upgrade to a paid plan if you need more requests"
         }
     }
 }

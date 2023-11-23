@@ -25,12 +25,12 @@ class LoginViewController: UIViewController {
     @IBAction func loginButtonPressed(_ sender: UIButton) {
         
         guard let username = userNametextField.text, username != "" && username.count >= 6 else {
-            self.present(ReUsables.showAlert(titel: Constants.Strings.alertsHeader.alertTitel, message: Constants.Strings.alerts.userNameOrPasswordNotCorrect), animated: true)
+            self.present(ReUsables.showAlert(titel: Constants.Strings.alertsHeader.alertTitel, message: Constants.Strings.alertsString.userNameOrPasswordNotCorrect), animated: true)
             return
         }
         
         guard let password = passwordTextField.text, password != "" else {
-            self.present(ReUsables.showAlert(titel: Constants.Strings.alertsHeader.alertTitel, message: Constants.Strings.alerts.userNameOrPasswordNotCorrect), animated: true)
+            self.present(ReUsables.showAlert(titel: Constants.Strings.alertsHeader.alertTitel, message: Constants.Strings.alertsString.userNameOrPasswordNotCorrect), animated: true)
             return
         }
         
@@ -70,7 +70,7 @@ class LoginViewController: UIViewController {
             self.present(navController, animated: true)
         } else {
             // User not exist
-            self.present(ReUsables.showAlert(titel: Constants.Strings.alertsHeader.alertTitel, message: Constants.Strings.alerts.userNameOrPasswordNotCorrect), animated: true)
+            self.present(ReUsables.showAlert(titel: Constants.Strings.alertsHeader.alertTitel, message: Constants.Strings.alertsString.userNameOrPasswordNotCorrect), animated: true)
         }
     }
     

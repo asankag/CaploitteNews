@@ -12,6 +12,7 @@ class SearchViewController: UIViewController {
     var categories = [String]()
     var filters = [Filter]()
     
+    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var bottomViewConstraint: NSLayoutConstraint!
     @IBOutlet weak var bottomView: UIView!
     @IBOutlet weak var resetButtonOutlet: UIButton!
@@ -19,7 +20,13 @@ class SearchViewController: UIViewController {
     @IBOutlet weak var menuCollectionView: UICollectionView!
     @IBOutlet weak var filtersCollectionView: UICollectionView!
     @IBOutlet weak var resultCountLabel: UILabel!
+    @IBOutlet weak var tableView: UITableView!
+    private var searchViewModel: SearchViewModel!
+    private var dashboardViewModel: DashboardViewModel!
+    private var dataSource : SearchNewsDataSource<NewsTableViewCell,Articles>!
     var myMemberVariable: Int = 0
+    var theNewsItems: [Articles]?
+    var lastSearchKeyword = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +34,8 @@ class SearchViewController: UIViewController {
         menuCollectionView.register(ButtonCollectionViewCell.nib(), forCellWithReuseIdentifier: ButtonCollectionViewCell.identifer)
         
         filtersCollectionView.register(FilterButtonCollectionViewCell.nib(), forCellWithReuseIdentifier: FilterButtonCollectionViewCell.identifer)
+        
+        tableView.register(NewsTableViewCell.nib(), forCellReuseIdentifier: NewsTableViewCell.identifer)
         
         menuCollectionView.delegate = self
         menuCollectionView.dataSource = self
@@ -54,20 +63,56 @@ class SearchViewController: UIViewController {
     }
     
     func UiChanges() {
-        categories = ["Filter", "Healthy", "Technology", "Finance", "Arts", "Sports"]
+        categories = ["Filter", "General", "Business", "Entertainment", "Health", "Science", "Sports", "Technology"]
         
         filters.append(Filter(name: "Recommended", status: false))
-        filters.append(Filter(name: "Latest", status: false))
+        filters.append(Filter(name: "Latest", status: true))
         filters.append(Filter(name: "Most Viewed", status: false))
-        filters.append(Filter(name: "Channel", status: false))
-        filters.append(Filter(name: "Following", status: false))
+        filters.append(Filter(name: "Relevancy", status: false))
+        filters.append(Filter(name: "Popularity", status: false))
         
         resetButtonOutlet.layer.cornerRadius = 15
         saveButtonOutlet.layer.cornerRadius = 25
         resetButtonOutlet.layer.borderColor = UIColor.black.cgColor
         resetButtonOutlet.layer.borderWidth = 1
         bottomView.dropShadow()
-        bottomViewConstraint.constant = -300
+//        bottomViewConstraint.constant = -300
+        
+        self.searchViewModel = SearchViewModel()
+        
+        self.dashboardViewModel = DashboardViewModel()
+        self.dashboardViewModel.bindNewsViewModelToController = {
+            self.updateDataSource()
+        }
+    }
+    
+    func updateDataSource(){
+        
+        self.dataSource = SearchNewsDataSource(cellIdentifier: "NewsTableViewCell", items: self.dashboardViewModel.newsData.articles ?? [], configureCell: { (cell, newsItem) in
+            cell.registorCell(image: newsItem.urlToImage ?? "", author: newsItem.urlToImage ?? "", titel: newsItem.title ?? "", datetime: newsItem.publishedAt ?? "")
+            self.theNewsItems = self.dashboardViewModel.newsData.articles
+            self.resultCountLabel.text = "About \(self.dashboardViewModel.newsData.totalResults ?? 0) results"
+        })
+        
+        DispatchQueue.main.async {
+            self.tableView.dataSource = self.dataSource
+            self.tableView.reloadData()
+        }
+    }
+    
+    func updateDataSourceWithFilters(){
+        
+        self.dataSource = SearchNewsDataSource(cellIdentifier: "NewsTableViewCell", items: self.searchViewModel.newsData.articles ?? [], configureCell: { (cell, newsItem) in
+            cell.registorCell(image: newsItem.urlToImage ?? "", author: newsItem.author ?? "", titel: newsItem.title ?? "", datetime: newsItem.publishedAt ?? "")
+            self.theNewsItems = self.searchViewModel.newsData.articles
+            self.lastSearchKeyword = self.lastSearchKeyword.replacingOccurrences(of:"%20", with: " ")
+            self.resultCountLabel.text = "About \(self.searchViewModel.newsData.totalResults ?? 0) results for \(self.lastSearchKeyword)"
+        })
+        
+        DispatchQueue.main.async {
+            self.tableView.dataSource = self.dataSource
+            self.tableView.reloadData()
+        }
     }
     
     @IBAction func BackButtonPressed(_ sender: UIButton) {
@@ -75,7 +120,34 @@ class SearchViewController: UIViewController {
     }
     
     @IBAction func saveButtonPressed(_ sender: UIButton) {
+        searchForValues(searchString: searchBar.text ?? "")
+    }
+    
+    func searchForValues(searchString: String) {
+        var filtersString = ""
+        filters.indices.forEach { (index) in
+            if filters[index].status == true {
+                filtersString = filtersString + "," + (filters[index].name ?? "")
+            }
+        }
+        if filtersString != "" {
+            filtersString.remove(at: filtersString.startIndex)
+        } else {
+            filtersString = "Popularity"
+        }
+        filtersString = filtersString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? "Popularity"
+        var searchText = searchString
         
+        if searchText != "" {
+            searchText = searchText.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? "Bitcoin"
+            lastSearchKeyword = searchText
+            self.searchViewModel.getSearchData(keyword: searchText, sortBy: filtersString)
+            self.searchViewModel.bindSearchedNewsViewModelToController = {
+                self.updateDataSourceWithFilters()
+            }
+        } else {
+            // do nothing
+        }
     }
     
     @IBAction func resetButtonPressed(_ sender: UIButton) {
@@ -91,6 +163,20 @@ class SearchViewController: UIViewController {
                 self.view.layoutIfNeeded()
         }
     }
+    
+    func goToDetailView(item: Articles) {
+        
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Dashboard", bundle: nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "NewsDetailViewController") as! NewsDetailViewController
+        newViewController.modalPresentationStyle = .fullScreen
+        newViewController.theNewsItem = item
+        self.present(newViewController, animated: true, completion: nil)
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.resignFirstResponder()
+//        searchForValues(searchString: searchBar.text ?? "")
+    }
 }
 
 extension SearchViewController: UICollectionViewDelegate {
@@ -103,6 +189,7 @@ extension SearchViewController: UICollectionViewDelegate {
                         self.view.layoutIfNeeded()
                 }
             } else {
+                searchForValues(searchString: categories[indexPath.row])
                 myMemberVariable = indexPath.row
                 menuCollectionView.reloadData()
             }
@@ -144,5 +231,21 @@ extension SearchViewController: UICollectionViewDataSource{
             
             return cell
         }
+    }
+}
+
+extension SearchViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        goToDetailView(item: (self.theNewsItems?[indexPath.row])!)
+    }
+}
+
+extension SearchViewController: UISearchBarDelegate {
+//    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+//        searchForValues(searchString: searchText)
+//    }
+    
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        searchForValues(searchString: searchBar.text ?? "")
     }
 }

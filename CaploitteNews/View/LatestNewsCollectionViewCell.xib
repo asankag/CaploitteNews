@@ -34,6 +34,9 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="toU-9q-63V">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cellBgGradient" translatesAutoresizingMaskIntoConstraints="NO" id="5mO-Ya-kfB">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="240"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HC3-Xa-thQ">
                                 <rect key="frame" x="16" y="77" width="288" height="13.666666666666671"/>
                                 <fontDescription key="fontDescription" name="Nunito-Bold" family="Nunito" pointSize="10"/>
@@ -61,6 +64,9 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="5mO-Ya-kfB" firstAttribute="top" secondItem="vX2-m4-Mp2" secondAttribute="top" id="22Y-x2-r6z"/>
+                            <constraint firstAttribute="trailing" secondItem="5mO-Ya-kfB" secondAttribute="trailing" id="40Z-Md-7iX"/>
+                            <constraint firstAttribute="bottom" secondItem="5mO-Ya-kfB" secondAttribute="bottom" id="4DR-Yy-3WS"/>
                             <constraint firstItem="Rr5-Pv-LI0" firstAttribute="leading" secondItem="vX2-m4-Mp2" secondAttribute="leading" constant="16" id="6aD-xN-OYc"/>
                             <constraint firstItem="HC3-Xa-thQ" firstAttribute="top" secondItem="vX2-m4-Mp2" secondAttribute="top" constant="77" id="CKT-Xz-WaW"/>
                             <constraint firstItem="Rr5-Pv-LI0" firstAttribute="top" secondItem="HC3-Xa-thQ" secondAttribute="bottom" constant="10" id="F0s-Xt-CTE"/>
@@ -73,6 +79,7 @@
                             <constraint firstAttribute="trailing" secondItem="HC3-Xa-thQ" secondAttribute="trailing" constant="16" id="mqW-gb-lb3"/>
                             <constraint firstAttribute="trailing" secondItem="qGd-k0-dAK" secondAttribute="trailing" constant="16" id="oqF-bf-gGE"/>
                             <constraint firstItem="qGd-k0-dAK" firstAttribute="leading" secondItem="vX2-m4-Mp2" secondAttribute="leading" constant="16" id="pjT-fE-Exo"/>
+                            <constraint firstItem="5mO-Ya-kfB" firstAttribute="leading" secondItem="vX2-m4-Mp2" secondAttribute="leading" id="tDh-3E-tUD"/>
                             <constraint firstItem="qGd-k0-dAK" firstAttribute="top" secondItem="Rr5-Pv-LI0" secondAttribute="bottom" constant="25" id="yK4-kK-a8b"/>
                         </constraints>
                     </view>
@@ -91,11 +98,13 @@
                 <outlet property="cellDescription" destination="qGd-k0-dAK" id="Fyh-NB-Q88"/>
                 <outlet property="cellImage" destination="toU-9q-63V" id="Kbe-b9-uAk"/>
                 <outlet property="cellTopic" destination="Rr5-Pv-LI0" id="A9m-C6-uUp"/>
+                <outlet property="gradientImage" destination="5mO-Ya-kfB" id="jAK-ys-AYl"/>
             </connections>
             <point key="canvasLocation" x="180" y="68.246445497630333"/>
         </collectionViewCell>
     </objects>
     <resources>
+        <image name="cellBgGradient" width="576" height="256"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

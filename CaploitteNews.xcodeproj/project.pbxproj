@@ -85,6 +85,8 @@
 		A4A0DA092B0EC7EB002A0F7B /* FilterButtonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A0DA072B0EC7EB002A0F7B /* FilterButtonCollectionViewCell.swift */; };
 		A4A0DA0A2B0EC7EB002A0F7B /* FilterButtonCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A4A0DA082B0EC7EB002A0F7B /* FilterButtonCollectionViewCell.xib */; };
 		A4A0DA0C2B0ECEEB002A0F7B /* Filter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A0DA0B2B0ECEEB002A0F7B /* Filter.swift */; };
+		A4A0DA0E2B0F3901002A0F7B /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A0DA0D2B0F3901002A0F7B /* SearchViewModel.swift */; };
+		A4A0DA102B0F3D3F002A0F7B /* SearchNewsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A0DA0F2B0F3D3F002A0F7B /* SearchNewsDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -155,6 +157,8 @@
 		A4A0DA072B0EC7EB002A0F7B /* FilterButtonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterButtonCollectionViewCell.swift; sourceTree = "<group>"; };
 		A4A0DA082B0EC7EB002A0F7B /* FilterButtonCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterButtonCollectionViewCell.xib; sourceTree = "<group>"; };
 		A4A0DA0B2B0ECEEB002A0F7B /* Filter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filter.swift; sourceTree = "<group>"; };
+		A4A0DA0D2B0F3901002A0F7B /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		A4A0DA0F2B0F3D3F002A0F7B /* SearchNewsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNewsDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,6 +259,8 @@
 				A4A0DA032B0E858A002A0F7B /* FilteredDashboardViewModel.swift */,
 				A4A0D9F32B0D6314002A0F7B /* LatestNewsDataSource.swift */,
 				A4A0DA012B0E8422002A0F7B /* FilteredNewsDataSource.swift */,
+				A4A0DA0D2B0F3901002A0F7B /* SearchViewModel.swift */,
+				A4A0DA0F2B0F3D3F002A0F7B /* SearchNewsDataSource.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -520,6 +526,7 @@
 				A4A0D9CC2B0D158E002A0F7B /* ViewControllerLocator.swift in Sources */,
 				A4A0DA042B0E858A002A0F7B /* FilteredDashboardViewModel.swift in Sources */,
 				A4A0D9EE2B0D55FA002A0F7B /* News.swift in Sources */,
+				A4A0DA102B0F3D3F002A0F7B /* SearchNewsDataSource.swift in Sources */,
 				A4A0D9DF2B0D2E26002A0F7B /* UITextFieldExtensions.swift in Sources */,
 				A4A0D9C02B0D149D002A0F7B /* Constants.swift in Sources */,
 				A4A0DA092B0EC7EB002A0F7B /* FilterButtonCollectionViewCell.swift in Sources */,
@@ -536,6 +543,7 @@
 				A4A0D9F42B0D6314002A0F7B /* LatestNewsDataSource.swift in Sources */,
 				A4A0D93D2B0C74A3002A0F7B /* LoginViewController.swift in Sources */,
 				A4A0D9392B0C74A3002A0F7B /* AppDelegate.swift in Sources */,
+				A4A0DA0E2B0F3901002A0F7B /* SearchViewModel.swift in Sources */,
 				A4A0D93B2B0C74A3002A0F7B /* SceneDelegate.swift in Sources */,
 				A4A0D9F82B0DC596002A0F7B /* ViewExtensions.swift in Sources */,
 				A4A0D9FB2B0E6F44002A0F7B /* ButtonCollectionViewCell.swift in Sources */,
