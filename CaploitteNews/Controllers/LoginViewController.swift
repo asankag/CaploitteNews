@@ -61,6 +61,13 @@ class LoginViewController: UIViewController {
         })
         if flg {
             // goto dashboard
+            let storyboard = UIStoryboard(name: "Dashboard", bundle: nil)
+            let navController = storyboard.instantiateViewController(withIdentifier: "DashboardNavigationContollerStoryboard") as! UINavigationController
+            navController.modalPresentationStyle = .fullScreen
+
+            navController.modalTransitionStyle = .coverVertical//.crossDissolve
+            
+            self.present(navController, animated: true)
         } else {
             // User not exist
             self.present(ReUsables.showAlert(titel: Constants.Strings.alertsHeader.alertTitel, message: Constants.Strings.alerts.userNameOrPasswordNotCorrect), animated: true)
@@ -68,13 +75,10 @@ class LoginViewController: UIViewController {
     }
     
     func UiChanges () {
-        loginButtonOutlet.dropShadow()
+        loginButtonOutlet.dropShadow(scale: 25)
         
         userNametextField.setLeftView(image: (UIImage(systemName: "person")!))
         passwordTextField.setLeftView(image: (UIImage(systemName: "lock")!))
     }
 }
 
-extension UITextField {
-  
-}

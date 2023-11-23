@@ -27,7 +27,7 @@ class SignupViewcontroller: UIViewController {
         passwordTextField.setLeftView(image: (UIImage(systemName: "lock")!))
         reEnterPasswordTextField.setLeftView(image: (UIImage(systemName: "lock")!))
         
-        createButtonOutlet.dropShadow()
+        createButtonOutlet.dropShadow(scale: 25)
     }
     
     @IBAction func createButtonPressed(_ sender: UIButton) {
