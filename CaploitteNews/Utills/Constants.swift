@@ -23,7 +23,7 @@ struct Constants {
     }
     
     struct APIKeys {
-        static let NewsAPIkey = "12549b96953b49628247e79cfd6a255b"
+        static let NewsAPIkey = "f26ee88000c546bc8effa4bbfbc739e3"
     }
     
     struct EncryptionKey {

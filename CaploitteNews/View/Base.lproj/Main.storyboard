@@ -43,7 +43,7 @@
                                         <fontDescription key="fontDescription" name="Nunito-Medium" family="Nunito" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="@Asdfghjkl123" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ape-fz-ybP">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ape-fz-ybP">
                                         <rect key="frame" x="25" y="215" width="340" height="45"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="45" id="jy3-Bz-CQI"/>
